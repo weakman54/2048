@@ -51,6 +51,19 @@ function love.draw()
 end
 
 
+function love.keypressed(key)
+    if key == "f9" then
+        Game.autoplay = not Game.autoplay
+        Game.autoplayInterval = 0.1
+    
+    elseif key == "f10" then
+        Game.autoplay = not Game.autoplay
+        Game.autoplayInterval = 0.0
+
+    end
+end
+
+
 function love.quit()
     Game:save()
 end

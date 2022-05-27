@@ -30,6 +30,8 @@ function Game:initialize()
     
     self.highscores = {}
     self:loadHighscores()
+
+    self.autoplay = false
 end
 
 function Game:restart()
@@ -156,6 +158,17 @@ end
 
 
 function Game:update(dt)
+    if self.autoplay then -- For debug purposes, also it looks cool
+        local directions = {'Up', 'Down', 'Left', 'Right'}
+
+        self.autoplayAcc = (self.autoplayAcc or 0) + dt
+        if self.autoplayAcc > self.autoplayInterval then
+            self.autoplayAcc = 0
+            self:move(directions[math.random(1, #directions)])
+        end
+    end
+
+
     if Input:pressed("up") then
         Game:move("Up")
 
