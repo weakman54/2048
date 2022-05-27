@@ -2,7 +2,7 @@
 # 2048
 A simple clone of 2048 (https://play2048.co), by weakman54. Done in Love2D.
 
-End goal is to use this as a testing ground for runnint the NEAT algorithm, though I did get a bit ahead of myself and added a bunch of QoL features that weren't necessarily needed.
+End goal is to use this as a testing ground for running the NEAT algorithm, though I did get a bit ahead of myself and added a bunch of QoL features that weren't necessarily needed.
 
 ## Running
 Needs Love2D to run, I probably won't build this into executables until someone asks for it.
