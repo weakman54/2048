@@ -5,10 +5,13 @@
     figure out options for window
     "Seeded" randomness to make undo less cheaty (though it's still possible to use it to test for "favourable" moves)
     Fix Icon
-    Proper state management
+    Proper state management'
+    limit amt of undo history
+    limit amt of highscore entries
 
     Find a nice font
     Redo menu screens to look nicer and be more consistent between each other
+    Hide console
 
     Tests for score
     Tests for highscores
